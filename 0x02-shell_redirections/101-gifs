@@ -1,2 +1,2 @@
 #!/bin/bash
-ls --sort=size | find -type f -name "*.txt" | rev | cut -d "/" -f 1 | cut -d '.' -f 2- | rev
+find -type f -name "*.txt" | rev | cut -d "/" -f 1 | cut -d '.' -f 2- | rev | sort -n -r
