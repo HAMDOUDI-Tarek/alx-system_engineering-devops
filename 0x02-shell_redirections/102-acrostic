@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(grep -o  ^[[:upper:]] eliza.txt | tr -d "\n")
+echo $(grep -o  ^[[:upper:]] | tr -d "\n")
