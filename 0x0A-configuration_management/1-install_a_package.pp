@@ -5,7 +5,7 @@ package { 'python3.8':
   ensure => '3.8.10',
 }
 
-# Install pip for Python 3
+# Install pip for Python3
 package { 'python3-pip':
   ensure => installed,
 }
@@ -17,7 +17,7 @@ package { 'flask':
   require  => Package['python3-pip'],
 }
 
-# Install Werkzeug 2.1.1 using system-wide pip (not pip3)
+# Install Werkzeug 2.1.1 using system-wide pip
 package { 'Werkzeug':
   ensure   => '2.1.1',
   provider => 'pip',
